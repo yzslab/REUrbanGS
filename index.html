@@ -48,22 +48,23 @@
               Reconstruction</h1>
             <div class="is-size-5 publication-authors">
               <span class="author-block">
-                Zhensheng Yuan,</span>
+                Zhensheng Yuan<sup>1, 2</sup>,</span>
               <span class="author-block">
-                Haozhi Huang,</span>
+                Haozhi Huang<sup>1</sup>,</span>
               <span class="author-block">
-                Zhen Xiong,
+                Zhen Xiong<sup>1</sup>,
               </span>
               <span class="author-block">
-                Di Wang,
+                Di Wang<sup>1</sup>,
               </span>
               <span class="author-block">
-                Guanghua Yang,
+                Guanghua Yang<sup>1</sup>,
               </span>
             </div>
 
-            <div class="is-size-5 publication-authors">
-              <span class="author-block">Jinan University</span>
+            <div class="is-size-5 publication-authors" style="color:#726f6f">
+              <span class="author-block"><sup>1</sup>Jinan University&nbsp;&nbsp;&nbsp;</span>
+              <span class="author-block"><sup>2</sup>University of Macau</span>
             </div>
 
             <div class="column has-text-centered">
@@ -112,20 +113,45 @@
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-              We present a resource-efficient framework that enables fast reconstruction and real-time rendering of
-              urban-level scenarios while maintaining robustness against appearance variations across multi-view
-              captures.
-              Our approach begins with scene partitioning for parallel training, employing a visibility-based image
-              selection strategy to optimize resource utilization.
-              A controllable level-of-detail (LOD) strategy regulate the Gaussian density during training and rendering
-              to balance quality, memory efficiency, and performance.
-              The appearance transformation module mitigates inconsistencies across images while enabling flexible
-              adjustments.
-              Additionally, we utilize enhancement modules, such as depth regularization, scale regularization, and
-              anti-aliasing, to improve reconstruction fidelity.
-              Experimental results demonstrate that our method effectively reconstructs urban-scale scenes and
-              outperforms previous approaches in both efficiency and quality.
+              We present a framework that enables fast reconstruction
+              and real-time rendering of urban-scale scenes while maintaining robustness against appearance variations
+              across
+              multi-view captures. Our approach begins with scene partitioning for parallel training, employing a
+              visibility-based
+              image selection strategy to optimize training efficiency. A
+              controllable level-of-detail (LOD) strategy explicitly regulates Gaussian density under a user-defined
+              budget, enabling efficient training and rendering while maintaining high visual fidelity. The appearance
+              transformation
+              module mitigates the negative effects of appearance inconsistencies across images while enabling flexible
+              adjustments. Additionally, we utilize enhancement modules,
+              such as depth regularization, scale regularization, and antialiasing, to improve reconstruction fidelity.
+              Experimental
+              results demonstrate that our method effectively reconstructs
+              urban-scale scenes and outperforms previous approaches
+              in both efficiency and quality.
             </p>
+          </div>
+        </div>
+      </div>
+      <!--/ Abstract. -->
+    </div>
+  </section>
+
+  <section class="section" style="padding-top: 0;">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Comparison with SOTA</h2>
+          <div class="content has-text-justified" style="text-align: center;">
+            <img src="static/images/metrics1.png" width="100%" style="display: block;"/>
+            <br/>
+            <img src="static/images/vis1.png" width="100%" style="display: block;"/>
+            <br/>
+            <br/>
+            <img src="static/images/metrics2.png" width="100%" style="display: block;"/>
+            <br/>
+            <img src="static/images/vis2.png" width="100%" style="display: block;"/>
           </div>
         </div>
       </div>
